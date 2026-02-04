@@ -188,7 +188,7 @@ export default function HomeScreen() {
                     placeholderTextColor="#666" 
                     value={ipAddress} 
                     onChangeText={setIpAddress} 
-                    keyboardType="numeric" 
+                    keyboardType="url" 
                 />
                 <TouchableOpacity style={styles.btnPrimary} onPress={handleConnect} disabled={isConnecting}>
                     {isConnecting ? <ActivityIndicator color="white" /> : <Text style={styles.btnText}>BAĞLAN</Text>}
